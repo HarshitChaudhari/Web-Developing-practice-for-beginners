@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A NUMBER GUESSING GAME WHERE THE PLAYER MUST GUESS CORRECT NUMBER</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>  
+            <html> 
+                <head> 
+                    <title>Guess the number</title> 
+                    <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\CSS\Guessing game.css"> 
+                    <script src="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\Java Script\Guessing game.js"></script> 
+                </head> 
+                <body> 
+                    <div class="main"> 
+                        <h2>Number Guessing Game</h2> 
+                        <div class="inner"> 
+                            <p id="one">Guess a number between 1 and 100</p> 
+                            <input type="text" id="num" placeholder="Enter Your Guess">                 
+                            <button onclick="say()" class="btn">Submit Guess</button> 
+                        </div> 
+                    </div> 
+                </body> 
+            </html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            .main{ 
+                background-color: rgb(235, 235, 235);     
+                width: 50%;     
+                position: absolute;     
+                margin-top: 15%;     
+                margin-left: 25%;     
+                text-align: center;     
+                align-items: center;     
+                border-radius: 5%;     
+                font-family: sans-serif;     
+                height: 30%; 
+            } 
+
+            .inner{ 
+                background-color: white;     
+                padding-top: 3%;     
+                border-radius: 5%; 
+                width: 65%;     
+                margin-left: 15%;     
+                margin-bottom: 5%; 
+                height: 50%;     
+                width: 60%; 
+            } 
+
+            .btn{ 
+                color: white; 
+                background-color: rgb(34, 204, 0);     
+                width: 25%;     
+                align-items: center;     
+                text-align: center;     
+                border-radius: 5px;     
+                border: none;     
+                padding: 1% 0%;     
+                text-transform: uppercase;     
+                margin-left: 2%; 
+            } 
+
+            p{ 
+                font-weight: 400; 
+            } 
+            
+        </textarea>
+
+        <h2>JS Code</h2>
+        <textarea rows="10" readonly>
+            function say(){     
+                var thinkingof;     
+                var Guess ;     
+                thinkingof = 65 
+                Guess = parseInt(document.getElementById("num").value)     
+                var message = document.getElementById("one");            
+                if (Guess>thinkingof){ 
+                        message.textContent = 'Your Guess is Too High. Try again.'; 
+                } 
+                else if(Guess<thinkingof){ 
+                    message.textContent = 'Your Guess is Too low. Try again.'; 
+                }         
+                else{ 
+                    message.textContent = 'Congratulations! You Guessed the correct number'                    
+                } 
+            } 
+            
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os4p6.png">
+
+    </div>
+</body>
+</html>

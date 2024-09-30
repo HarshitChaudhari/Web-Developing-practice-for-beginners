@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A TABLE AS SHOWN BELOW ON "SEMINAR"</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+            <html>
+                <head>
+                <title>3.Seminar table</title>
+                <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM1\WT\PRACTICALS\SET 3\CSS\Seminar TimeTable.css">
+                </head>
+                <body>
+                <table>
+                <tr>
+                <td rowspan="3" colspan="2">Day</td>
+                <td colspan="4" class="semi">Seminar</td>
+                </tr>
+                <tr>
+                <td colspan="2" class="sche">Schedule</td>
+                <td colspan="2" rowspan="2">Topic</td>
+                </tr>
+                <tr>
+                <td>Begin</td>
+                <td>End</td>
+                </tr>
+                <tr>
+                <td rowspan="2" colspan="2">Monday</td>
+                <td rowspan="2" id="yel">8:00 am</td>
+                <td rowspan="2" id="pur">5:00pm</td>
+                <td colspan="2">Introduction to XML</td>
+                </tr>
+                <tr>
+                <td colspan="2">Validity: DTD and Relax NG</td>
+                </tr>
+                <tr>
+                <td rowspan="3" colspan="2">Tuesday</td>
+                <td id="yel">8:00 am</td>
+                <td id="yel">11:00 am</td>
+                <td rowspan="2">Xpath</td>
+                <tr>
+                <td id="yel">11:00 am</td>
+                <td id="gr">2:00 pm</td>
+                </tr>
+                <tr>
+                <td id="gr">2:00 pm</td>
+                <td id="pur">5:00 pm</td>
+                <td rowspan="1" class="trans">Transformations</td>
+                </tr>
+                <tr>
+                <td colspan="2">Wednesday</td>
+                <td id="yel">8:00 am</td>
+                <td id="gr">12:00 pm</td>
+                <td>XSL Formatting objects</td>
+                </tr>
+                </table>
+                </body>
+            </html>
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            table{ 
+                border: 1px solid black;     
+                width: 50%;     
+                align-items: center;     
+                text-align: center;     
+                font-size: 13px;     
+                font-family: sans-serif;     
+                height: 50%; 
+            } 
+            
+            td{ 
+                border: 1px solid black; 
+            } 
+            
+            #yel{ 
+                background-color: rgb(241, 241, 121); 
+            }
+
+            #pur{ 
+                background-color: rgb(230, 123, 230); 
+            } 
+            
+            #gr{ 
+                background-color: rgba(31, 150, 31, 0.838); 
+            }  
+            
+        </textarea>
+        
+        <h2>IMAGE</h2>
+        <img src="os3p3.png">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A "REGISTRATION FORM" AS SHOWN BELOW</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+<html> 
+    <head> 
+        <title>Registration form</title> 
+        <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 3\CSS\RegistrationForm.css"> 
+    </head> 
+    <body> 
+        <div class="main"> 
+            <div class="body"> 
+                <h2><span>Re</span>gistration</h2> 
+                <form> 
+                    <table> 
+                        <tr> 
+                            <td class="left"> 
+                                <label for="fullname">Full name</label><br> 
+                                <input type="text" name="fullname" placeholder="Enter your name"> 
+                            </td> 
+                            <td class="right"> 
+                                <label for="username">Username</label><br> 
+                                <input type="text" name="username" placeholder="Enter your username"> 
+                            </td> 
+                        </tr> 
+                        <tr> 
+                            <td class="left"> 
+                                <label for="email">Email</label><br> 
+                                <input type="email" id="E-mail" placeholder="Enter your email"> 
+                            </td> 
+                            <td class="right"> 
+                                <label for="phonenumber">Phone Number</label><br> 
+                                <input type="text" name="phonenumber" placeholder="Enter your number"> 
+                            </td> 
+                        </tr> 
+                        <tr> 
+                            <td class="left"> 
+                                <label for="password">Password</label><br> 
+                                <input type="password" name="password" placeholder="Enter your password"> 
+                            </td> 
+                            <td class="right"> 
+                                <label for="confirmpassword">ConfirmPassword</label><br> 
+                                <input type="password" name="confirmpassword" placeholder="Confirm your password"> 
+                            </td> 
+                        </tr> 
+                    </table> 
+                </form> 
+                <h3>Gender</h3> 
+                    <input type="radio" value="Male" name="1"> Male 
+                    <input style="margin-left: 5%;" type="radio" value="Female" name="1"> Female 
+                    <input style="margin-left: 5%;" type="radio" value="Prefer not to say" name="1"> Prefer not to say 
+                <br><br> 
+                <input type="button" class="reg" value="Register">              
+            </div> 
+        </div> 
+    </body> 
+</html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            .main{
+                width: 40%;
+                background-image: linear-gradient(150deg, rgb(108, 205, 238), rgb(140, 21, 170));
+                padding-top: 11%;
+                padding-bottom: 11%;
+                padding-right: 25%;
+                padding-left: 35%;
+            }
+
+            .body{
+                background-color: white;
+                font-family: sans-serif;
+                width: 70%;
+                padding-left: 5%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                border-radius:6px;
+            }
+
+            .right{
+                padding-left:8%;
+                padding-top: 3%;
+            }
+
+            .left{
+                padding-top: 3%;
+            }
+
+            table{
+                font-size: small;
+                font-weight:bold;
+            }
+
+            .reg{
+                background-image: linear-gradient(90deg, rgb(108, 205, 238), rgb(140, 21, 170));
+                border: none;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: max-content;
+                padding-left: 37%;
+                padding-right: 37%;
+                padding-bottom: 0.5%;
+                padding-top: 0.5%;
+            }
+            
+        </textarea>
+        
+        <h2>IMAGE</h2>
+        <img src="os3p6.png">
+
+    </div>
+</body>
+</html>

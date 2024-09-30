@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A "GOOD VIBES FORM" AS SHOWN BELOW</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+            <html> 
+                <head> 
+                    <title>Good Vibes form</title> 
+                    <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 3\CSS\GoodVibesForm.css"> 
+                </head> 
+                <body> 
+                    <div class="sky">           
+                        <h1>Good Vibes Form</h1> 
+                    <div class="wh"> 
+                        <h2>Tell us something positive that happened to you today</h2>            
+                        <form> 
+                            <table> 
+                                <tr> 
+                                    <td class="lab"><label for="name">Name</label></td> 
+                                    <td><input type="text" name="name" placeholder="Enter your name" class="inp"></td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr>                     
+                                <tr> 
+                                    <td class="lab"><label for="email">Email</label></td> 
+                                    <td><input type="text" name="email" placeholder="Enter your email address" class="inp"></td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr>                     
+                                <tr> 
+                                    <td class="lab"><label for="scale">On a scale,how good was it?</label></td> 
+                                    <td><input type="text" name="scale" placeholder="Enter a number between 1 and 10" class="inp" ></td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr> 
+                                <tr> 
+                                    <td class="lab"><label for="happened">Where did in happen?</label></td> 
+                                    <td><select name="happened" id="happ"><option>At home</option><option>At playground</option><option>At college</option></select></td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr>                     
+                                <tr> 
+                                    <td class="lab"><label for="time">At what time of day did it happen?</label></td> 
+                                    <td><input type="radio" name="time" value="Morning">Morning<br> 
+                                        <input type="radio" name="time" value="Afternoon">Afternoon<br> 
+                                        <input type="radio" name="time" value="Evening">Evening 
+                                    </td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr>                     
+                                <tr> 
+                                    <td class="lab"><label for="exp">What emotions did you expeirience?<br>(Select all that apply)</label></td> 
+                                    <td><input type="checkbox" name="exp" value="Excited">Excited<br> 
+                                        <input type="checkbox" name="exp" value="Humbled">Humbled<br> 
+                                        <input type="checkbox" name="exp" value="Elated">Elated<br>                             
+                                        <input type="checkbox" name="exp" value="Loved">Loved<br> 
+                                        <input type="checkbox" name="exp" value="Enthusiastic">Enthusiastic 
+                                    </td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr>                     
+                                <tr> 
+                                    <td class="lab"><label for="des">Please describe your positive expeirience.</label></td> 
+                                    <td><textarea class="inp" name="des" placeholder="Enter your experience here.."textarea></td> 
+                                </tr> 
+                                <tr> 
+                                    <td>&nbsp;</td> 
+                                </tr>                     
+                                <tr> 
+                                    <td style="text-align: center;"><input class="sub" type="submit" value="Submit"></td> 
+                                </tr> 
+                            </table> 
+                        </form>     
+                        </div> 
+                    </div> 
+                </body> 
+            </html> 
+              
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            h1{ 
+                text-align: center; 
+            } 
+
+            h2{ 
+                font-size: large;     
+                text-align: center; 
+            } 
+
+            .sky{ 
+                background-color: skyblue;     
+                padding-left: 3%;    
+                padding-bottom: 1%;     
+                width: 50%;     
+                padding-right: 3%;     
+                margin-left: 20%;     
+                align-items: center; 
+            } 
+
+            .wh{ 
+                background-color: white;     
+                width: 75%;     
+                padding-left: 10%;     
+                padding-right: 15%;     
+                padding-top: 2%;     
+                align-items: center; 
+            } 
+
+            .inp{ 
+                width: 180%; 
+            } 
+            .lab{ 
+                text-align: right; 
+            } 
+
+            .sub{ 
+                text-align: center;     
+                align-items: center;     
+                border-radius: 3px;     
+                margin-left: 100%;     
+                background-color: skyblue; 
+                color: white;     
+                border: none;     
+                padding: 5%; 
+            } 
+            
+        </textarea>
+        
+        <h2>IMAGE</h2>
+        <img src="os3p7.png">
+
+    </div>
+</body>
+</html>

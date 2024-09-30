@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A STATIC WEBPAGE PRESENTING A SAMPLE OF C.V</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Practical-7</title>
+                </head>
+                <body>
+                    <div class="one">
+                        <h1>CURRICULUM<br>VITAE</h1>
+                            <div class="two">
+                                <h2>Personal Data</h2>
+                                    <p>Name : Jane<br>Surname : Doe<br>
+                                       Date of birth : 10.04.1974<br>
+                                       Place of Birth : Vadodara, Gujrat
+                                    </p>
+                                <h2><dt>Education</dt></h2>
+                                    <dd>
+                                        <span style="color: black; font-weight: bold;">2005-2009</span> &nbsp;Computer Engineering in Technical University
+                                        <br><br>
+                                        <span style="color: black; font-weight: bold;">2001-2005</span> &nbsp;High School, Joseph's
+                                        <br><br>
+                                        <span style="color: black; font-weight: bold;">1995-2001</span> &nbsp;Primary School
+                                    </dd>
+                                <h2><dt>Proffesional Experience</dt></h2>
+                                    <dd>
+                                        <span style="color: black; font-weight: bold;">2007-2009</span> &nbsp;Computer Teacher at Technical University of ABC in DEF
+                                        <br><br>
+                                        <span style="color: black; font-weight: bold;">2005-2007</span> &nbsp;software Engineer at ANC Ltd.
+                                    </dd>
+                            </div>
+                    </div>
+                </body>
+            </html>
+            
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            h1{
+                color: blue;
+                background-color: lightgray;
+                letter-spacing: 30px;
+                text-align: center;
+            }
+
+            h2{
+                color: brown;
+                letter-spacing: 10px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            dd{
+                font-size: 20px;
+            }
+
+            .one{
+                float: center;
+                width: 60%;
+                margin-left: 20%;
+                clear: both;
+            }
+
+            .two{
+                padding: 5%;
+            }
+
+        </textarea>
+        
+        <h2>IMAGE</h2>
+        <img src="os2p7.png">
+
+    </div>
+</body>
+</html>

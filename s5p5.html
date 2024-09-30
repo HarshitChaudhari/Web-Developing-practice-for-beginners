@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">WRITE A PHP PROGRAM TO CHECK STUDENT'S GRADE BASED ON MARKS USING IF-ELSE CONDITIONS</h2><br>
+        <h2>PHP Code</h2>
+        <textarea rows="10" readonly> 
+            <html> 
+                <head> 
+                    <link rel="stylesheet" href="style12-18.css"> 
+                </head> 
+                <body> 
+                <div class="main"> 
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+                    Enter Marks: <input type="text" name="userInput1" class="inp">  
+                    <br><br> 
+                    Enter Marks: <input type="text" name="userInput2" class="inp">  
+                    <br><br> 
+                    Enter Marks: <input type="text" name="userInput3" class="inp">  
+                    <br><br> 
+                    Enter Marks: <input type="text" name="userInput4" class="inp">          
+                    <br><br> 
+                    <input type="submit" value="Submit" class="btn">         
+                </form> 
+                    <?php 
+                    if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
+                        $rpd = $_POST["userInput1"]; 
+                        $wt = $_POST["userInput2"]; 
+                        $pp = $_POST["userInput3"]; 
+                        $dmp = $_POST["userInput4"]; 
+                        $total = 100 * 5; 
+                        $percentage = (("$rpd" + "$wt" + "$pp" + "$dmp")/ "$total")*100;             
+                        if ($percentage >= 60){                 
+                            print "First Division"; 
+                        } elseif (45 < $percentage and $percentage < 60){                 
+                            print "Second Division"; 
+                        } elseif (33 < $percentage and $percentage < 45){                 
+                            print "Third Division";             
+                        } elseif ($percentage < 33){ 
+                            print "Failed"; 
+                        } 
+                        print("<br>$percentage"); 
+                    } 
+                    ?> 
+                </div> 
+
+                </body> 
+            </html> 
+                      
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            body{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-family:sans-serif;
+                background-color: #2b6777;
+            }
+
+            .main{
+                background-color: #c8d8e4;
+                padding: 10%;
+                width: max-content;
+                border-radius: 20px;
+                box-shadow: 0 20px 30px rgba(0, 0, 0, 0.874) ;
+                font-size: x-large;
+                border: 2px solid black;
+                color: #52ab98;
+            }
+
+            .inp{
+                background-color: transparent;
+            }
+
+            .btn{
+                text-align: center;
+                padding: 2.5%;
+                background-color: transparent;
+                border-radius: 10px;
+            }
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os5p5.png">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">BUILD A UI TO ADD TWO NUMBERS ENTERED BY THE USER AND DISPLAY THE RESULT</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly> 
+            <html> 
+                <head> 
+                    <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\CSS\Add.css"> 
+                    <script src="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\Java Script\Add.js"></script> 
+                </head> 
+                <body> 
+                    <div class="main"> 
+                        <h2>Simple Arithmetic Operation</h2> 
+                        <div class="inner"> 
+                            <form> 
+                                <input type="text" id="num1" class="num"> 
+                                    <br><br> 
+                                <input type="text" id="num2" class="num"> 
+                                    <br><br> 
+                                <input class="btn" value="Addition (+)" onclick="say()" type="button">                     
+                                    <br><br> 
+                                <p id="ans"></p> 
+                                    <br> 
+                            </form> 
+                        </div> 
+                    </div> 
+                </body> 
+            </html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            .main{ 
+                background-color: rgb(235, 235, 235);     
+                width: 50%;     
+                position: absolute;     
+                margin-top: 15%;     
+                margin-left: 25%;     
+                text-align: center;     
+                align-items: center;     
+                border-radius: 5%;     
+                font-family: sans-serif; 
+            } 
+
+            .inner{ 
+                background-color: white;     
+                padding-top: 3%;     
+                border-radius: 5%;     
+                width: 65%;     
+                margin-left: 15%;     
+                margin-bottom: 5%; 
+            } 
+
+            .num{     
+                width: 70%;     
+                padding: 0.5%; 
+            } 
+
+            .btn{ 
+                color: white; 
+                background-color: rgb(41, 247, 0);     
+                width: 20%;     
+                align-items: center;     
+                text-align: center;     
+                border-radius: 5px;     
+                border: none;     
+                padding: 1% 0%; 
+                text-transform: uppercase; 
+            } 
+
+            p{ 
+                font-weight: bold; 
+            } 
+            
+        </textarea>
+
+        <h2>JS Code</h2>
+        <textarea rows="10" readonly>
+            function say(){ 
+                var num1 = parseInt(document.getElementById("num1").value);     
+                var num2 = parseInt(document.getElementById("num2").value);     
+                var res = num1+num2; 
+                var h = document.getElementById("ans");     
+                h.innerHTML = "Result : "+res; 
+            } 
+            
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os4p2.png">
+
+    </div>
+</body>
+</html>

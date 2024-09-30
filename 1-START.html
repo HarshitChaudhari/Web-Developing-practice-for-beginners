@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page</title>
+</head>
+<body>
+      <div class="background">
+          <canvas class="header__background"></canvas>
+          <div class="inner">
+              <p><span class="g">GREETINGS,</span> <span class="fd">FELLOW DEVELOPERS!</span></p><br>
+              <div class="wm">
+              <ul>
+              <p class="msg"> <li>Immerse yourself in a learning experience where theory meets practice.</li><br> <br><li>Discover the power of HTML, CSS, JavaScript and PHP through our interactive coding exercises.</li><br><br></p>
+              <li>Explore a platform dedicated to building and enhancing your web development  and designing skills.</li><br><br>
+              <li>Our platform guides you through a series of carefully crafted exercises, offering a comprehensive approach to mastering HTML, CSS, JavaScript and PHP.</li><br><br>
+              <li>Our platform emphasizes the practical application of web development concepts, bridging the gap between theory and hands-on coding experience.</li>
+              </ul>
+          </div>
+          <a href="2-index.html" target="_blank"><button class="btn">Click here to embark your journey</button></a>
+      </div>
+      <footer>
+          <div class="container1">
+              <div class="about-me">
+                  <h3>ABOUT ME</h3>
+                  <p>Welcome to my corner of the internet! I'm Harshit Chaudhari, a student with a fervor for coding and a keen interest in creating delightful user experiences. My journey in web development is driven by a desire to combine functionality with aesthetics.Feel free to explore my website and reach out—I'd love to hear from you and learn about your own experiences and passions.</p>
+              </div>
+  
+              <div class="social-icons">
+                  <h3>SOCIAL MEDIA HANDLES</h3>
+                  <div class="icons-container">
+                      <a href="mailto:harshitchaudhari055@gmail.com" target="_blank" class="fa fa-envelope"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://www.linkedin.com/in/harshit-chaudhari-b48752288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa fa-linkedin"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://www.facebook.com/harshit.chaudhari.7583?mibextid=9R9pXO" target="_blank" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://www.instagram.com/hars.hit_31?igsh=MWE4MG1tNTlwdXRnaA==" target="_blank" class="fa fa-instagram"></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    <script src="https://npmcdn.com/particlesjs@2.2.2/dist/particles.min.js"></script>
+    <script>
+      window.onload = function() {
+        Particles.init({
+          selector: '.header__background',
+          color: '#75A5B7',
+          maxParticles: 150,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 70
+              }
+            }
+          ]
+        });
+      };
+    </script>
+</body>
+</html>

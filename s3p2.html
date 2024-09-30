@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A TABLE AS SHOWN BELOW ON "SCHOOL TIME TABLE"</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+        <html>
+            <head> 
+                <title>2.Time table</title> 
+                <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 3\CSS\School TimeTable.css"> 
+            </head> 
+            <body> 
+                <h1>School Timetable</h1> 
+                <table> 
+                    <tr> 
+                        <th colspan="2"></th> 
+                        <th>Mon</th> 
+                        <th class="tue">Tues</th> 
+                        <th>Wed</th> 
+                        <th class="thu">Thurs</th> 
+                        <th class="fri" id="top">Fri</th> 
+                        <th>Sat</th> 
+                        <th>Sun</th> 
+                    </tr> 
+        
+                    <tr> 
+                        <td colspan="2">1st period</td> 
+                        <td>English</td> 
+                        <td class="tue"></td> 
+                        <td></td> 
+                        <td class="thu">German</td> 
+                        <td class="fri">Dutch</td> 
+                        <td></td> 
+                        <td></td> 
+                    </tr> 
+                    <tr> 
+                        <td colspan="2">2nd period</td> 
+                        <td>English</td> 
+                        <td class="tue">English</td> 
+                        <td></td> 
+                        <td class="thu">German</td> 
+                        <td class="fri">Dutch</td> 
+                        <td></td> 
+                        <td></td> 
+                    </tr> 
+                    <tr> 
+                        <td colspan="2">3rd period</td> 
+                        <td></td> 
+                        <td class="tue">German</td> 
+                        <td></td> 
+                        <td class="thu">German</td> 
+                        <td class="fri">Dutch</td> 
+                        <td></td>                 <td></td> 
+                    </tr> 
+                    <tr> 
+                        <td colspan="2">4th period</td> 
+                        <td></td> 
+                        <td class="tue">English</td> 
+                        <td></td> 
+                        <td class="thu">English</td> 
+                        <td class="fri" id="bott">Dutch</td> 
+                        <td></td> 
+                        <td></td> 
+                    </tr> 
+                </table> 
+            </body> 
+        </html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+h1{ 
+    font-family: sans-serif;     
+    margin-top: 20px;     
+    margin-left: 10px; 
+}
+
+table{ 
+    border-collapse: collapse;     
+    margin-left: 10px;     
+    width: 40%;     
+    height: 25%;     
+    align-items: center;     
+    text-align: center;     
+    font-family: sans-serif;     
+    font-size: 80%; 
+}
+
+td,th{ 
+    border: 1px solid darkgray; 
+}
+
+.tue{ 
+    background-color: #AAFFAA;                 
+}
+
+.thu{ 
+    background-color: #AAFFAA; 
+}     
+
+.fri{ 
+    background-color: rgb(226, 198, 125);     
+    border-left: 4px solid palevioletred;     
+    border-right: 4px solid palevioletred; 
+}
+
+#top{ 
+    border-top: 4px solid palevioletred;; 
+}
+
+#bott{ 
+    border-bottom: 4px solid palevioletred; 
+} 
+
+        </textarea>
+        
+        <h2>IMAGE</h2>
+        <img src="os3p2.png">
+
+    </div>
+</body>
+</html>

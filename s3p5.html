@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A "CONTACT FORM" AS SHOWN BELOW</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+            <html>
+                <head>
+                    <title>CONTACT FORM</title>
+                        <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM1\WT\PRACTICALS\SET 3\CSS\Contact.css">
+                </head>
+                <body>
+                    <div class="main">
+                        <div class="up">
+                            <h1>CONTACT US</h1>
+                                <div class="upl"></div>
+                                <h3>Fill out the form below to learn more!</h3>
+                                </div>
+                                <div class="lp">
+                                    <form>
+                                    <table>
+                                        <tr>
+                                            <td><label for="first_name">first name</label><br>
+                                                <input type="text" name="first_name" placeholder="John"></td>&nbsp;&nbsp;
+                                            <td style="padding-left: 10%;"><label for="last_name">lastname</label><br>
+                                                <input type="text" name="last_name" placeholder="Smith"></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <table>
+                                        <tr>
+                                            <td><label for="email" class="req">email</label><br>
+                                                <input type="email" name="email"placeholder="john.smith@gmail.com" /></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <div class="grad"></div>
+                                     <br>
+                                    <table>
+                                        <tr>
+                                        <td><label for="comments">comments</label>
+                                            <textarea cols="46" rows="3" name="comments"textarea\></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+
+                                        </tr>
+                                            <td><input class="sub" type="submit" value="Submit">
+                                            <small>or press <b>enter</b></td>
+                                        </tr>
+                                    </table>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </body>
+            </html>
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            h1{
+                font-size:30px;
+                font-weight: 100;
+                display: inline-block;
+                margin: 15px;
+            }
+
+            h3{
+                font-size: 16px;
+                font-weight: 100;
+                margin: 15px;
+            }
+
+            .req::after{
+                content:"*";
+                color: red;
+            }
+
+               .main{
+                width:30%;
+                margin: 20px;
+                font-family: sans-serif;
+                background-color: gray;
+                padding-bottom: 2%;
+                padding-top: 2%;
+                padding-left: 2%;
+                padding-right: 2%;
+                margin-left: 30%;
+            }
+
+            .up{
+                color: aliceblue;
+                width: 200%;
+                background-image:url(https://media.istockphoto.com/id/1172073205/photo/blurredabstract-bokehbackground.webp?b=1&s=170667a&w=0&k=20&c=D7_PW8mOc8Euec_GlIztumQSvQdJH5zMyC_dgNzHCZQ=);
+                background-repeat: no-repeat;
+                background-size: 49% 120%;
+                padding-bottom: 2%;
+                padding-top: 2%;
+                padding-left: 2%;
+            }
+
+            .upl{
+                height: 2px;
+                width: 30%;
+                background-color: white;
+            }
+
+            .lp{
+                width: 95%;
+                padding: 2%;
+                background-color: white;
+            }
+
+            .sub{
+                border: none;
+                background-color: rgba(0, 191, 255, 0.912) ;
+                color: white;
+                padding: 15px 30px;
+                text-align: center;
+                align-items: center;
+                font-size: 15px;
+                display: inline-block;
+            }
+
+            .grad{
+                height: 2px;
+                text-align: center;
+                background-image: linear-gradient(90deg , rgb(0, 225, 255) , rgba(0, 191, 255, 0.912) );
+            }
+        </textarea>
+        
+        <h2>IMAGE</h2>
+        <img src="os3p5.png">
+
+    </div>
+</body>
+</html>

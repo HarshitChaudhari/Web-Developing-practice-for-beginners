@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">WRITE A PHP PROGRAM TO REVERSE THE STRING</h2><br>
+        <h2>PHP Code</h2>
+        <textarea rows="10" readonly>   
+            <html> 
+                <head> 
+                        <title></title> 
+                        <link rel="stylesheet" href="style12-18.css">  
+                    </head> 
+                    <body> 
+                        <div class="main"> 
+                        <h2>Reverse a string</h2> 
+                        <form method = "post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+                            Enter a string:<br> 
+                            <textarea type="text" name="userInput" class="inp" cols=50 rows=10> /textarea>             
+                            <br><br> 
+                            <input type="submit" name="submit" value="Reverse" class="btn">         
+                        </form> 
+                        <?php 
+                            if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
+                                $str = $_POST["userInput"]; 
+                                echo strrev($str); 
+                            }  
+                        ?> 
+                        </div> 
+                    </body> 
+                </html> 
+                
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            body{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-family:sans-serif;
+                background-color: #2b6777;
+            }
+
+            .main{
+                background-color: #c8d8e4;
+                padding: 10%;
+                width: max-content;
+                border-radius: 20px;
+                box-shadow: 0 20px 30px rgba(0, 0, 0, 0.874) ;
+                font-size: x-large;
+                border: 2px solid black;
+                color: #52ab98;
+            }
+
+            .inp{
+                background-color: transparent;
+            }
+
+            .btn{
+                text-align: center;
+                padding: 2.5%;
+                background-color: transparent;
+                border-radius: 10px;
+            }
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os5p13.png">
+
+    </div>
+</body>
+</html>

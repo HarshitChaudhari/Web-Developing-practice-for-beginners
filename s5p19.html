@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CONTACT FORM</h2><br>
+        <h2>PHP Code</h2>
+        <textarea rows="10" readonly>   
+            <html>
+                <head>
+                    <title>CONTACT FORM</title>
+                    <link rel="stylesheet" href="contact1.css">
+                </head>
+                <body>
+                    <div class="main">
+                        <div class="up">
+                            <h1>CONTACT US</h1>
+                            <div class="upl"></div>
+                            <h3>Fill out the form below to learn more!</h3>
+                        </div>
+                        <div class="lp">
+                            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                                <table>
+                                    <tr>
+                                        <td><label for="first_name">Name</label><br>
+                                            <input type="text" name="name" placeholder="John" required></td>&nbsp;&nbsp;
+                                    </tr>
+                                </table>
+                                <br>
+                                <table>
+                                    <tr>
+                                        <td><label for="email" class="req">email</label><br>
+                                            <input type="email" name="email" placeholder="john.smith@gmail.com" required></td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <div class="grad"></div>
+                                <br>
+                                <table>
+                                    <tr>
+                                        <td><label for="comments">comments</label>
+                                            <textarea cols="46" rows="3" name="message" required> /textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr></tr>        
+                                        <td><input class="sub" type="submit" value="Submit">
+                                            <small>or press <b>enter</b></td>
+                                    </tr>         
+                                </table>
+                        </form>
+                        </div>
+                    </div>
+                    <?php
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                            $name = $_POST["name"];
+                            $email = $_POST["email"];
+                            $message = $_POST["message"];
+                            $to = "mjdevansh@gmail.com";
+                            $subject = "New Contact Form Submission";
+                            $headers = "From: $email";
+                            $mailContent = "Name: $name\n";
+                            $mailContent .= "Email: $email\n\n";
+                            $mailContent .= "Message:\n$message";
+                            mail($to, $subject, $mailContent, $headers);
+                            header("Location: thanks.html");
+                            exit;
+                        }
+                    ?> 
+                </body>
+            </html>
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            h1{
+                font-size:30px;
+                font-weight: 100;
+                display: inline-block;
+                margin: 15px;
+            }
+            
+            h3{
+                font-size: 16px;
+                font-weight: 100;
+                margin: 15px;
+            }
+            
+            .req::after{
+                content:"*";
+                color: red;
+            }
+            
+            .main{
+                width:30%;
+                margin: 20px;
+                font-family: sans-serif;
+                background-color: rgba(42, 41, 41, 0.853);
+                padding-bottom: 2%;
+                padding-top: 2%;
+                padding-left: 2%;
+                padding-right: 2%;
+                margin-left: 30%;
+            }
+            
+            .up{
+                color: aliceblue;
+                width: 97%;
+                background-image: url(https://img.freepik.com/premium-vector/cityscape-dark-blue-background-with-bright-glowing-neon-technology-city-background_322958-6.jpg);
+                background-size: 49% 120%;
+                padding-bottom: 2%;
+                padding-top: 2%;
+                padding-left: 2%;
+            }
+            
+            .upl{
+                height: 2px;
+                width: 30%;
+                background-color: white;
+            }
+            
+            .lp{
+                width: 95%;
+                padding: 2%;
+                background-color: white;
+            }
+            
+            .sub{
+                border: none;
+                background-color: rgba(0, 110, 255, 0.912) ;
+                color: white;
+                padding: 15px 30px;
+                text-align: center;
+                align-items: center;
+                font-size: 15px;
+                display: inline-block;
+            }
+            
+            .grad{
+                height: 2px;
+                text-align: center;
+                background-image: linear-gradient(90deg , rgb(0, 179, 255) , rgba(0, 21, 255, 0.912) );
+            }
+            
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os5p19.png">
+
+    </div>
+</body>
+</html>

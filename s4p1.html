@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE AN WEBPAGE THAT DISPLAYS “HELLO WORLD!” WHEN BUTTON IS CLICKED </h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>
+            <html> 
+                <head>  
+                    <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\CSS\HelloWorld.css"> 
+                    <script src="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\Java Script\HelloWorld.js"></script> 
+                </head> 
+                <body> 
+                    <div class="main"> 
+                    <h1>Kindly Click the button!!!</h1> 
+                        <div class="inner"> 
+                            <button onclick="say()" class="btn">Click me!!</button>                 
+                            <p id="hell"></p> 
+                        </div> 
+                    </div> 
+                </body> 
+            </html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            .main{ 
+                background-color: rgb(186, 186, 186);     
+                color: white;     
+                align-items: center;     
+                text-align: center;     
+                width: 50%;     
+                height: 40%; 
+            } 
+
+            .inner{     
+                width: 80%;     
+                height: 60%; 
+                background-color: black;     
+                align-items: center;     
+                justify-content: center;     
+                margin-left: 8%; 
+            } 
+
+            .btn{ 
+                margin-top: 5%;     
+                border: none;     
+                height: 40%;     
+                width: 20%; 
+                background-color: red; 
+                color: white; 
+            } 
+
+            h1{ 
+                padding-top: 5%; 
+            } 
+            
+        </textarea>
+
+        <h2>JS Code</h2>
+        <textarea rows="10" readonly>
+            function say(){     
+                alert('Hello World'); 
+                var h = document.getElementById("hell");     
+                h.innerHTML =  "Hello World"; 
+            } 
+
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os4p1.png">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;"> CREATE A WEBPAGE WITH A BUTTON THAT CHANGES THE BACKGROUND COLOR RANDOMLY WHEN CLICKED </h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>  
+            <html> 
+                <head> 
+                    <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\CSS\Random color.css"> 
+                    <script src="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\Java Script\Random color.js"></script> 
+                </head> 
+                <body> 
+                    <button onclick="change()" class="btn">Click</button>     </body> 
+            </html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            body{ 
+                align-items: center;     
+                justify-content: center;             
+            } 
+            
+            .btn{     
+                margin-top: 20%;     
+                margin-left: 45%;     
+                padding: 1%;     
+                padding-left: 3%;     
+                padding-right: 3%;     
+                border-radius: 15px; 
+                color: white; 
+                background-color: transparent;     
+                border-color: white;     
+                cursor: pointer;     
+                font-size: larger;     
+                font-family: sans-serif; 
+            } 
+            
+        </textarea>
+
+        <h2>JS Code</h2>
+        <textarea rows="10" readonly>
+            function change(){     
+                var r = Math.floor(Math.random() * 255)     
+                var g = Math.floor(Math.random() * 255)     
+                var b = Math.floor(Math.random() * 255)     
+                var bg = "rgb("+r + ","+g +","+b +")"     
+                document.body.style.background = bg 
+            } 
+
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os4p5.png">
+
+    </div>
+</body>
+</html>

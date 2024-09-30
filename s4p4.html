@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="prac-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="letter-spacing: 3px;">CREATE A WEBPAGE THAT GENERATES A RANDOM NUMBER BETWEEN 1 TO 100 WHEN A BUTTON IS CLICKED</h2><br>
+        <h2>HTML Code</h2>
+        <textarea rows="10" readonly>  
+            <html> 
+                <head> 
+                    <link rel="stylesheet" href="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\CSS\Random number.css"> 
+                    <script src="C:\Users\Harshit\Desktop\SEM 1\WT\PRACTICALS\SET 4\Java Script\Random number.js"></script> 
+                </head> 
+                <body> 
+                    <div class="main"> 
+                        <h1>Random Number Generator</h1> 
+                        <br><br> 
+                        <button onclick="say()" class="btn">Generate Random Number</button>             
+                        <br><br> 
+                        <p id="rn"></p> 
+                    </div> 
+                </body> 
+            </html> 
+
+        </textarea>
+
+        <h2>CSS Code</h2>
+        <textarea rows="10" readonly>
+            .main{     
+                margin-top: 15%;     
+                margin-left: 25%;     
+                text-align: center;     
+                align-items: center;     
+                justify-content: center; 
+                background-color: rgb(235, 235, 235); 
+                font-family: sans-serif; 
+                width: 50%;     
+                height: 30%; 
+            } 
+
+            h1{ 
+                padding-top: 2%; 
+            } 
+
+            .btn{ 
+                background-color: rgb(0, 184, 49);     
+                border: none;     
+                border-radius: 5px;     
+                padding: 2%;     
+                color: white;     
+                cursor: pointer; 
+            } 
+            
+        </textarea>
+
+        <h2>JS Code</h2>
+        <textarea rows="10" readonly>
+            function say(){ 
+                var a = parseInt(Math.floor(Math.random()*100)+1);     
+                var h = document.getElementById("rn");     
+                h.innerHTML = ("Random number:"+a) 
+            } 
+            
+        </textarea>
+
+        <h2>IMAGE</h2>
+        <img src="os4p4.png">
+
+    </div>
+</body>
+</html>
